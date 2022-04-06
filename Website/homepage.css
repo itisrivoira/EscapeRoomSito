@@ -1,13 +1,3 @@
-html {
-    height: 100%;
-}
-
-body {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    display: grid;
-    justify-items: left;
-    align-items: center;
-    background-color: #007fff;
+.mainColor {
+    background-color: aqua;
 }
