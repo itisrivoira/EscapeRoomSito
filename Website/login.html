@@ -30,7 +30,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./team.html">Team</a>
                     </li>
-                    </li>
+
+                    <select name="escaperoom" id="escaperoom">
+                      <option value="Soul">Soul</option>
+                      <option value="TheLostKeys">TheLostKeys</option>
+                      <option value="KikisKey">KikisKey</option>
+                      <option value="Trapped">Trapped</option>
+                    </select> 
                 </ul>
                 <span class="navbar-text">
                     <a class="nav-link" href="./login.html">Login</a>
@@ -46,16 +52,16 @@
                     <span class="load" onclick="openRegPage()" id="reg-action">Register</span>
                 </div>
                 <div class="login show-page">
-                    <input type="text" placeholder="Username" />
-                    <input type="password" placeholder="Password" />
+                    <input type="text" placeholder="Username" required />
+                    <input type="password" placeholder="Password" required />
                     <button>Login</button>
                     <a href="#" onclick="openRegPage()">Register</a>
                 </div>
                 <div class="reg">
-                    <input type="text" placeholder="Username" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <input type="date" placeholder="gg/mm/aaaa" />
+                    <input type="text" placeholder="Username" required />
+                    <input type="email" placeholder="Email" required />
+                    <input type="password" placeholder="Password" required />
+                    <input type="date" placeholder="gg/mm/aaaa" required />
                     <button>Register</button>
                     <a href="#" onclick="openLoginPage()">Login</a>
                 </div>
