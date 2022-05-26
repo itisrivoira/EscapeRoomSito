@@ -17,12 +17,15 @@
             $password = hash('sha256', $pass);
             $query = "SELECT * FROM utente WHERE BINARY username = '$username' AND password = '$password'";
             $rquery = $cn->query($query);
+            print_r($query);
+            print_r($rquery);
         
-            if($rquery->num_rows) {
+            /*if($rquery->num_rows) {
                 $row = $rquery->fetch_all(MYSQLI_BOTH);
 
                 $_SESSION['username'] = $row[0]['username'];
                 $_SESSION['password'] = $row[0]['password'];
+
 
                 echo "<h3 class='h3'>Accesso avvenuto con successo</h3>";
                 if ($_POST['escaperoom'] == '0') {
@@ -38,12 +41,13 @@
                 session_destroy();
                 echo "<h3 class='h3'>Accesso rifiutato</h3>";
                 header('Refresh:1; URL=login.html');
-            }
+            }*/ 
+            
 
             $cn->close();
         } else {
             echo "<h3 class='h3'>Non hai inserito tutti i dati, riprova</h3>";
-            header('Refresh:1; URL=index.html');
+            header('Refresh:1; URL=login.html');
         }
     }
 ?>
