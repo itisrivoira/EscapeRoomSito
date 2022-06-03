@@ -18,7 +18,7 @@
             $data = $_POST['data'];
             $nomeutente = $_POST['username'];
             $psw = hash('sha256', $_POST['password']);
-            $sql = "INSERT INTO utente VALUES (' ". $nomeutente. "','". $email. "','" . $psw . "', '" . $data . "') "; 
+            $sql = "INSERT INTO utente (username , password) VALUES ('". $nomeutente . "', '". $psw . "') ;"; 
             if (!$cn->query($sql)) {
                 echo "Errore della query: " . $cn->error . ".";
             }else{

@@ -25,16 +25,16 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html" style="color: #fff;">Home</a>
                         
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./team.html">Team</a>
+                        <a class="nav-link" href="./team.html" style="color: #fff;">Team</a>
                     </li>
 
                 </ul>
                 <span class="navbar-text">
-                    <a class="nav-link" href="./login.html">Login</a>
+                    <a class="nav-link" href="./login.html" style="color: #fff;">Login</a>
                     
                 </span>
             </div>
@@ -53,14 +53,16 @@
                     <button type="submit" name="invia">Login</button>
 
                     <div class="selezione">
-                    <select name="escaperoom">
-                        <option value="0">Soul</option>
-                        <option value="1">TheLostKeys</option>
-                        <option value="2">KikisKey</option>
-                        <option value="3">Trapped</option>
-                      </select> 
+                        <a onclick="openRegPage()" href="registrati.html">Register</a>
+                        <center>
+                            <select name="escaperoom" style="margin-top: 10%;">
+                                <option value="0">Soul</option>
+                                <option value="1">TheLostKeys</option>
+                                <option value="2">KikisKey</option>
+                                <option value="3">Trapped</option>
+                            </select>
+                        </center>
                     </div>
-                    <a onclick="openRegPage()" href="registrati.html">Register</a>
                 </div>
             </form>
         </div>

@@ -17,10 +17,8 @@
             $password = hash('sha256', $pass);
             $query = "SELECT * FROM utente WHERE BINARY username = '$username' AND password = '$password'";
             $rquery = $cn->query($query);
-            print_r($query);
-            print_r($rquery);
-        
-            /*if($rquery->num_rows) {
+
+            if($rquery->num_rows) {
                 $row = $rquery->fetch_all(MYSQLI_BOTH);
 
                 $_SESSION['username'] = $row[0]['username'];
@@ -29,9 +27,9 @@
 
                 echo "<h3 class='h3'>Accesso avvenuto con successo</h3>";
                 if ($_POST['escaperoom'] == '0') {
-                    header('Refresh:1; URL=/Soul/index.html');             
+                    header('Refresh:1; URL = https://MaisaniSimone.github.io/SoulEnigmistaGhostato');             
                 } else if ($_POST['escaperoom'] == '1') {
-                    header('Refresh:1; URL=/TheLostKeys/index.html');             
+                    header('Refresh:1; URL = https://matteoseimandi.github.io/TheLostKey');             
                 } else if ($_POST['escaperoom'] == '2') {
                     header('Refresh:1; URL=/KikisKey/index.html');             
                 } else if ($_POST['escaperoom'] == '3') {
@@ -41,7 +39,7 @@
                 session_destroy();
                 echo "<h3 class='h3'>Accesso rifiutato</h3>";
                 header('Refresh:1; URL=login.html');
-            }*/ 
+            }
             
 
             $cn->close();
