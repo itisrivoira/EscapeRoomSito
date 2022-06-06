@@ -31,9 +31,9 @@
                 } else if ($_POST['escaperoom'] == '1') {
                     header('Refresh:1; URL = https://matteoseimandi.github.io/TheLostKey');             
                 } else if ($_POST['escaperoom'] == '2') {
-                    header('Refresh:1; URL=/KikisKey/index.html');             
+                    header('Refresh:1; URL= https://justdevendra.github.io/KikisKeyWebGame');             
                 } else if ($_POST['escaperoom'] == '3') {
-                    header('Refresh:1; URL=/Trapped/index.html');             
+                    header('Refresh:1; URL= https://giachi03.github.io/TrappedWebApp');             
                 }
             } else {
                 session_destroy();
